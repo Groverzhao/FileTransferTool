@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="severGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>151</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>151</width>
+      <height>101</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>服务器端</string>
+    </property>
+    <widget class="QLabel" name="labelPort">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>端口</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPort">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>20</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>8888</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStartServer">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>40</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>启动服务器</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnStopServer">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>70</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>停止服务器</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="clientGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>331</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>客户端</string>
+    </property>
+    <widget class="QLabel" name="labelIP">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>服务器IP:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditIP">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>127.0.0.1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelClientPort">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>50</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>端口：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditClientPort">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>50</y>
+       <width>41</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>8888</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnConnect">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>20</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>连接服务器</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnDisconnect">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>60</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>断开连接</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="transferGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>341</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>文件传输</string>
+    </property>
+    <widget class="QPushButton" name="btnSelectFile">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择文件</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditFilePath">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>20</y>
+       <width>113</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSendFile">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>发送文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelProgress">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>传输进度</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBar">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>100</y>
+       <width>118</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSelectDir">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>60</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择目录</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="textEditLog">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>341</width>
+      <height>141</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
